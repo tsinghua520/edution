@@ -1,0 +1,36 @@
+{
+	"message": "获取列表成功",
+	"code": "0",
+	"data": [
+		{
+			"id":10,
+			"name":"tsinghua",
+			"picUrl":"http://sce-funlive-01.oss-cn-shanghai.aliyuncs.com/Adcerts/15303686418730abdacb7-3c98-4e94-9223-8560e626261c",
+			"addres":"DL.LDLDLDDKD",
+			"isHot": true
+		},{
+			"id": 11,
+			"name":"tsinghua",
+			"picUrl":"http://sce-funlive-01.oss-cn-shanghai.aliyuncs.com/Adcerts/15303686418730abdacb7-3c98-4e94-9223-8560e626261c",
+			"addres":"DL.LDLDLDDKD"
+		},{
+			"id": 11,
+			"name":"tsinghua",
+			"picUrl":"http://sce-funlive-01.oss-cn-shanghai.aliyuncs.com/Adcerts/15303686418730abdacb7-3c98-4e94-9223-8560e626261c",
+			"addres":"DL.LDLDLDDKD",
+			"isHot": true
+		},{
+			"id": 11,
+			"name":"tsinghua",
+			"picUrl":"http://sce-funlive-01.oss-cn-shanghai.aliyuncs.com/Adcerts/15303686418730abdacb7-3c98-4e94-9223-8560e626261c",
+			"addres":"DL.LDLDLDDKD",
+			"isHot": true
+		},{
+			"id": 11,
+			"name":"tsinghua",
+			"picUrl":"http://sce-funlive-01.oss-cn-shanghai.aliyuncs.com/Adcerts/15303686418730abdacb7-3c98-4e94-9223-8560e626261c",
+			"addres":"DL.LDLDLDDKD",
+			"isHot": true
+		}
+	]
+}

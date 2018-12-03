@@ -1,0 +1,132 @@
+header{
+  height: 70px;
+}
+section{
+  width: 1200px;
+  margin: 30px auto 0;
+  height: auto;
+  overflow: hidden;
+}
+.banner{
+  width: 1200px;
+  margin: 0 auto;
+}
+section .filter{
+  width: 300px;
+  float: left;
+  margin-bottom: 60px;
+}
+section .list{
+  width: 880px;
+  float: right;
+}
+section .best{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+section .filter-content {
+  width: 100%;
+  height: 1160px;
+  border: 1px solid #ddd;
+}
+section .filter-content .filter-title{
+  width: 100%;
+  height: 50px;
+  padding-left: 46px;
+  line-height: 50px;
+  color: #fff;
+  background:linear-gradient(270deg,rgba(250,159,39,1) 0%,rgba(243,102,17,1) 100%);
+  position: relative;
+}
+section .filter-content .filter-title::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url('../../assets/images/icon_screening.png');
+  left: 20px;
+  top: 17px;
+  background-size: 100% 100%;
+}
+section .filter-content > ul{
+  width: 260px;
+  margin: 0 auto;
+}
+section .filter-content > ul li{
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+section .filter-content > ul li{
+  position: relative;
+}
+section .filter-content > ul li > .tip{
+  position: absolute;
+  top: -40px;
+  left: -13px;
+  width:290px;
+  height:53px;
+  background:rgba(64,64,64,0.85);
+  box-shadow:0px 1px 4px 0px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  padding: 9px 10px 3px;
+  line-height: 18px;
+}
+section .filter-content > ul li > .tip.tip3{
+  top: -60px;
+  height: 73px;
+}
+section .filter-content > ul li > .tip:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -6px;
+  left: 33px;
+  border-left:6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top:6px solid rgba(64,64,64,0.85);
+}
+section .filter-content > ul li > h2{
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+section .filter-content > ul li:last-child{
+  border: none;
+}
+section .filter-content > ul li > .College{
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+}
+section .filter-content > ul li > .College span{
+  display: block;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+section .filter-content > ul li > .College span:first-child{
+  border-right: 1px solid #f36611;
+}
+section .filter-content > ul li > .College span:last-child{
+  border-left: none;
+}
+section .filter-content > ul li > .College span.active{
+  border-color: rgba(250,159,39,1);
+  background-color: rgba(250,159,39,1) ;
+  color: #fff;
+}
+section .list{
+  margin-bottom: 60px;
+}

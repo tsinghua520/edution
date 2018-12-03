@@ -1,0 +1,101 @@
+.el-pagination{
+  padding: 0;
+}
+.el-pagination.is-background .el-pager li{
+  margin: 0 10px 0 0;
+  width: 34px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 0;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: #F36611;
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover{
+  color: #F36611
+}
+.el-pagination.is-background .el-pager li.active:hover{
+  color: #fff;
+}
+.el-pagination.is-background .btn-next{
+  width: 34px;
+  height: 36px;
+  line-height: 36px;
+}
+/* range */
+.el-slider__bar{
+  background-color: #F36611;
+}
+.el-slider__runway,.el-slider__bar{
+  height: 3px;
+}
+.el-slider__button{
+  border: 1px solid #F36611;
+}
+.el-slider__button{
+  height: 14px;
+  width: 14px;
+}
+.el-slider__button-wrapper{
+  top: -16px;
+}
+.el-slider__runway{
+  margin: 5px 0
+}
+/* .el-tooltip__popper.is-dark{
+  background-color: #F36611;
+}
+.el-tooltip__popper .popper__arrow{
+  background-color: #fff;
+} */
+/* .el-tooltip__popper.is-dark{
+  background-color: #F36611;
+} */
+.el-tooltip__popper{
+  min-width: 36px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 2px;
+  text-align: center;
+}
+/* select */
+.el-select{
+  display: block;
+  width: 100%;
+}
+.el-input--small .el-input__inner{
+  height: 40px;
+  line-height: 40px;
+}
+.el-input__inner{
+  border-radius: 0;
+  border: 1px solid #ddd;
+}
+.el-select .el-input.is-focus .el-input__inner,.el-select .el-input__inner:focus{
+  border-color: #F36611;
+}
+.el-select-dropdown__item.selected{
+  color: #F36611
+}
+/* tabs */
+.el-tabs--card>.el-tabs__header .el-tabs__nav{
+  border-top: none;
+  border-bottom: none;
+}
+.content .el-tabs--card>.el-tabs__header .el-tabs__item{
+  background-color: rgba(248,248,248,1);
+  border: 1px solid #ddd;
+  border-left: none;
+}
+.content .el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+  background-color: #fff;
+  color: #F36611;
+  border-top: 3px solid #F36611;
+  background-color: #fff;
+  border-bottom: none;
+  transform: translateY(2px);
+  border-bottom: 1px solid #fff;
+}
+.content .el-tabs--card>.el-tabs__header .el-tabs__item:hover{
+  color: #F36611;
+}
