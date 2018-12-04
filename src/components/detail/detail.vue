@@ -6,13 +6,10 @@
     </div>
     <section class="clearfix" v-if="allInfo.headImgUrl">
       <div class="desc">
-        <div>
-          <img :src="summary1.imgUrl" alt="">
-        </div>
         <div class="ranking">
           <h2>{{ summary1.name }}</h2>
           <p>{{ summary1.state }}</p>
-          <span>#{{ summary1.ranking }}</span>
+          <span>Ranking No.{{ summary1.ranking }}</span>
         </div>
         <div class="baseinfo">
           <h3>Basic Info</h3>
@@ -23,8 +20,8 @@
             <li>{{ summary2.type }}</li>
             <li>Students:</li>
             <li>{{ summary2.students }}</li>
-            <!-- <li>Admission rate：</li>
-            <li>{{ summary2.admissionRate }}</li> -->
+            <li>Admission rate：</li>
+            <li>{{ summary2.admissionRate }}</li>
             <li>Location：</li>
             <li>{{ summary2.location }}</li>
           </ul>
@@ -58,14 +55,14 @@
                 <td valign="top">
                   <ul>
                     <li v-for="(item, index) in tab1.majors" v-if="index < tab1.majors.length/2" :key="index">
-                      <a :href="item.linkAddr">{{ item.name }}</a>
+                      <a href="javascript:void(0)">{{ item.name }}</a>
                     </li>
                   </ul>
                 </td>
                 <td valign="top">
                   <ul>
                     <li v-for="(item, index) in tab1.majors" v-if="index > tab1.majors.length/2" :key="index">
-                      <a :href="item.linkAddr">{{ item.name }}</a>
+                      <a href="javascript:void(0)">{{ item.name }}</a>
                     </li>
                   </ul>
                 </td>
@@ -98,7 +95,7 @@
               <tr><td>Early Decision Offered</td><td>{{ tab3.entrance4 }}</td></tr>
               <tr><td>Regular Admission Deadline</td><td>{{ tab3.entrance5 }}</td></tr>
             </table>
-            <h4 class="title">Undergraduate Majors</h4>
+            <h4 class="title">Qualifications of Enrolled Freshmen</h4>
             <table class="second mt0">
               <tr><td style="width:45%">Average GPA</td><td>{{ tab3.entrance6 }}</td></tr>
               <tr><td>SAT Math</td><td>{{ tab3.entrance7 }}</td></tr>

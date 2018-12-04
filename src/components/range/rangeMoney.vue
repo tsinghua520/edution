@@ -12,8 +12,8 @@
       <span v-for="item in 21" :style="{left:( item - 1 ) * 5 +'%'}" :key="item"></span>
     </div>
     <div class="value">
-      <span v-for="item in 4" :style="{left:item * 25 - 25 +'%'}" :key="item">{{ 15 + (item - 1) * 16 }}K</span>
-      <span :style="{left:100 +'%'}">80K</span>
+      <span v-for="item in 4" :style="{left:item * 25 - 25 +'%'}" :key="item">${{ 10 + (item - 1) * 20 }}K</span>
+      <span :style="{left:100 +'%'}">$90K</span>
     </div>
   </div>
 </template>
@@ -22,9 +22,9 @@
 export default {
   data () {
     return {
-      value: [15, 80],
-      max: 80,
-      min: 15
+      value: [10, 90],
+      max: 90,
+      min: 10
     }
   },
   methods: {

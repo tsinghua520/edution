@@ -18,10 +18,10 @@
               <div class="tip" v-if="showTip === 1">
                 选择National University(全美综合大学)，或者选择Liberal Arts College(全美文理学院)进行学校筛选
               </div>
-              <h2 @mouseenter="changeShowTip(1)" @mouseleave="changeShowTip(0)">University of College</h2>
+              <h2 @mouseenter="changeShowTip(1)" @mouseleave="changeShowTip(0)">University or College</h2>
               <div class="College">
-                <span :class="{active:searchType === 'university'}" @click="changeCollege('university')">University</span>
-                <span :class="{active:searchType === 'college'}" @click="changeCollege('college')">College</span>
+                <span :class="{active:searchType === 'university'}" @click="changeCollege('university')">National University</span>
+                <span :class="{active:searchType === 'college'}" @click="changeCollege('college')">Liberal Arts College</span>
               </div>
             </li>
             <li>
@@ -53,7 +53,7 @@
               <RangeRate @changeValue='changeRateHandle' :range="rateRange"></RangeRate>
             </li>
             <li>
-              <div class="tip" v-if="showTip === 5">
+              <div class="tip tip3" v-if="showTip === 5">
                 【Undergraduate Enrollment】指的是本科注册学生人数，通过设定本科注册学生人数来进行学校筛选
               </div>
               <h2 @mouseenter="changeShowTip(5)" @mouseleave="changeShowTip(0)">Undergraguate Enroll</h2>
@@ -144,11 +144,12 @@ export default {
     return {
       isloading: true,
       isDefault: true,
-      FeesRange: [15, 80],
+      FeesRange: [10, 90],
       rateRange: [0, 100],
-      enrollRange: [0, 55],
+      enrollRange: [0, 60],
       rankingRange: [1, 150],
       options: [
+        {value: '', label: 'All'},
         {value: 'AL', label: 'Alabama'},
         {value: 'AK', label: 'Alaska'},
         {value: 'AZ', label: 'Arizona'},
@@ -211,6 +212,7 @@ export default {
       //   {value: 'S8', label: 'Trades and Personal Services'}
       // ],
       optionsFactor: [
+        {value: '', label: 'All'},
         {value: 'F1', label: 'Rigor of Secondary School Record'},
         {value: 'F2', label: 'Adademic GPA'},
         {value: 'F3', label: 'Standarized Tests'},
@@ -230,15 +232,16 @@ export default {
         {value: 'F17', label: 'Work Experience'}
       ],
       optionsType: [
+        {value: '', label: 'All'},
         {value: 'Private', label: 'Private'},
         {value: 'Public', label: 'Public'}
       ],
-      location: 'AL',
+      location: '',
       showTip: 0,
       searchType: 'university',
       // fieldStudy: 'S1',
-      factor: 'F1',
-      institutionType: 'Private',
+      factor: '',
+      institutionType: '',
       userId: '',
       info: {},
       pageNo: 0

@@ -12,8 +12,8 @@
       <span v-for="item in 21" :style="{left:( item - 1 ) * 5 +'%'}" :key="item"></span>
     </div>
     <div class="value">
-      <span v-for="item in 4" :style="{left:item * 25 - 25 +'%'}" :key="item">{{ (item - 1) * 14 }}K</span>
-      <span :style="{left:100 +'%'}">55K</span>
+      <span v-for="item in 4" :style="{left:item * 25 - 25 +'%'}" :key="item">{{ (item - 1) * 15 }}K</span>
+      <span :style="{left:100 +'%'}">60K</span>
     </div>
   </div>
 </template>

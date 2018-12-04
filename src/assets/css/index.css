@@ -115,6 +115,7 @@ section .filter-content > ul li > .College span{
   border: 1px solid #ddd;
   box-sizing: border-box;
   cursor: pointer;
+  font-size: 13px;
 }
 section .filter-content > ul li > .College span:first-child{
   border-right: 1px solid #f36611;
