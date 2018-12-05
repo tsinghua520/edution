@@ -2,6 +2,7 @@
 
 > Edution project
 > node
+> git address: https://github.com/tsinghua520/edution.git
 
 ## Build Setup
 
@@ -32,7 +33,8 @@ npm run build --report
 │   │   ├── common                    // 基础组件
 │   │   ├── error				              // 404页面
 │   │   ├── index				              // index页面
-│   │   ├── main				              // main页面
+│   │   ├── detail				              // detail
+│   │   ├── range				              // range组件
 │   ├── mock                      //mock数据 模拟接口数据
 │   ├── router
 │   │   └── router.js                 // 路由配置

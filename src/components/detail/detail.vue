@@ -55,14 +55,16 @@
                 <td valign="top">
                   <ul>
                     <li v-for="(item, index) in tab1.majors" v-if="index < tab1.majors.length/2" :key="index">
-                      <a href="javascript:void(0)">{{ item.name }}</a>
+                      <!-- <a href="javascript:void(0)">{{ item.name }}</a> -->
+                      <a :href="item.linkAddr">{{ item.name }}</a>
                     </li>
                   </ul>
                 </td>
                 <td valign="top">
                   <ul>
                     <li v-for="(item, index) in tab1.majors" v-if="index > tab1.majors.length/2" :key="index">
-                      <a href="javascript:void(0)">{{ item.name }}</a>
+                      <!-- <a href="javascript:void(0)">{{ item.name }}</a> -->
+                      <a :href="item.linkAddr">{{ item.name }}</a>
                     </li>
                   </ul>
                 </td>
