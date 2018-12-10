@@ -121,7 +121,7 @@ export default {
 }
 .box li > .info > h3{
   color: #333;
-  width: 170px;
+  width: 168px;
   font-size: 18px;
   line-height: 22px;
   overflow:hidden;
