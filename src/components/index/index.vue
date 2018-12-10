@@ -117,6 +117,7 @@
           background
           layout="pager, next"
           v-if="info.total > 0"
+          :page-size="15"
           @current-change="changePage"
           :total="info.total">
         </el-pagination>

@@ -121,9 +121,14 @@ export default {
 }
 .box li > .info > h3{
   color: #333;
-  width: 181px;
+  width: 170px;
   font-size: 18px;
   line-height: 22px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
 }
 .box li > .info > p{
   color: #666;
