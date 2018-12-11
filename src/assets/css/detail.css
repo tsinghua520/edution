@@ -187,7 +187,7 @@ section .desc > .baseinfo > h3{
 }
 .banner img{
   width: 100%;
-  height: 240px;
+  height: 400px;
 }
 section{
   width: 1200px;
@@ -246,6 +246,13 @@ section .desc > .baseinfo > ul li:nth-child(2n - 1){
 }
 section .desc > .baseinfo > ul li:nth-child(2n){
   text-indent: 20px;
+}
+section .desc > .baseinfo > ul li:nth-child(2n) a{
+  color: #333;
+}
+section .desc > .baseinfo > ul li:nth-child(2n) a:hover{
+  color: #F36611;
+  text-decoration: underline;
 }
 section .desc > .baseinfo > h4{
   font-size: 14px;
@@ -307,11 +314,15 @@ section .desc > .baseinfo > h3{
   list-style: circle;
   list-style-type: disc;
   margin-bottom: 10px;
-  cursor: pointer;
   font-size: 14px;
 }
 .content table tr td li a{
+  cursor: pointer;
   color:rgba(51,51,51,1);
+}
+.content table tr td li span{
+  color:rgba(51,51,51,1);
+  cursor: default;
 }
 .content table tr td li a:hover{
   text-decoration: underline;

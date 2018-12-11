@@ -43,7 +43,9 @@ export default {
   name: 'list',
   methods: {
     toDetail (schoolId) {
-      this.$router.push({path: 'detail', query: {schoolId: schoolId}})
+      let routeData = this.$router.resolve({path: 'detail', query: {schoolId: schoolId}})
+      window.open(routeData.href, '_blank')
+      // this.$router.push({path: 'detail', query: {schoolId: schoolId}})
     },
     toDetailW (url) {
       location.href = url
@@ -127,8 +129,8 @@ export default {
   overflow:hidden;
   text-overflow:ellipsis;
   display:-webkit-box;
-  -webkit-box-orient:vertical;
   -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
 }
 .box li > .info > p{
   color: #666;

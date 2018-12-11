@@ -15,7 +15,7 @@
           <h3>Basic Info</h3>
           <ul>
             <li>Website: </li>
-            <li>{{ summary2.website }}</li>
+            <li> <a :href="summary2.website" target="_blank">{{ summary2.website }}</a></li>
             <li>Institution Type：</li>
             <li>{{ summary2.type }}</li>
             <li>Students:</li>
@@ -56,7 +56,8 @@
                   <ul>
                     <li v-for="(item, index) in tab1.majors" v-if="index < tab1.majors.length/2" :key="index">
                       <!-- <a href="javascript:void(0)">{{ item.name }}</a> -->
-                      <a :href="item.linkAddr">{{ item.name }}</a>
+                      <a :href="item.linkAddr" v-if="item.linkAddr"  target="_blank">{{ item.name }}</a>
+                      <span v-else>{{ item.name }}</span>
                     </li>
                   </ul>
                 </td>
@@ -64,7 +65,8 @@
                   <ul>
                     <li v-for="(item, index) in tab1.majors" v-if="index > tab1.majors.length/2" :key="index">
                       <!-- <a href="javascript:void(0)">{{ item.name }}</a> -->
-                      <a :href="item.linkAddr">{{ item.name }}</a>
+                      <a :href="item.linkAddr" v-if="item.linkAddr"  target="_blank">{{ item.name }}</a>
+                      <span v-else>{{ item.name }}</span>
                     </li>
                   </ul>
                 </td>
